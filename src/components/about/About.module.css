@@ -1,6 +1,6 @@
 .about__area {
   min-height: 100vh;
-  padding-top: 100px; 
+  padding-top: 100px;
   margin-top: -100px;
   position: relative;
   margin-bottom: 100px;
@@ -105,8 +105,6 @@
   transition: transform 1.9s ease-in-out;
 }
 
-
-
 .about__btn .uil {
   font-size: 1.2rem;
 }
@@ -140,7 +138,7 @@
     margin-top: 100px;
     font-size: 3.5rem;
   }
-  .about_subtitle{
+  .about__subtitle {
     font-size: 2rem;
   }
 
@@ -148,18 +146,18 @@
     text-align: left;
     font-size: 1.8rem;
   }
-  .about__area{
+  .about__area {
     width: 100vh;
   }
-  .about__btn{
+  .about__btn {
     width: 60%;
     font-size: 2.2rem;
     padding-left: 100px;
   }
-  .about__name{
+  .about__name {
     font-size: 3rem;
   }
-  .about__role{
+  .about__role {
     font-size: 2rem;
   }
 }
