@@ -1,0 +1,165 @@
+.about__area {
+  min-height: 100vh;
+  padding-top: 100px; 
+  margin-top: -100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.about {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.about__image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__heading {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.about__subtitle {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+.about__heading span {
+  color: #0d2b6b;
+}
+
+.about__heading .uil {
+  font-size: 1.75rem;
+  color: var(--text-color);
+}
+
+.about__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.about__role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.about__info {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: var(--title-color);
+}
+
+.about__info a {
+  color: blue;
+  text-decoration: none;
+}
+
+.about__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  width: 50%;
+}
+
+.about__btn:hover {
+  transform: rotateX(360deg);
+  transition: transform 1.9s ease-in-out;
+}
+
+
+
+.about__btn .uil {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about__content {
+    align-items: center;
+  }
+
+  .about__heading {
+    justify-content: center;
+  }
+
+  .about__info {
+    text-align: left;
+  }
+
+  .about__image img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about__heading {
+    margin-top: 100px;
+    font-size: 3.5rem;
+  }
+  .about_subtitle{
+    font-size: 2rem;
+  }
+
+  .about__info {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .about__area{
+    width: 100vh;
+  }
+  .about__btn{
+    width: 60%;
+    font-size: 2.2rem;
+    padding-left: 100px;
+  }
+  .about__name{
+    font-size: 3rem;
+  }
+  .about__role{
+    font-size: 2rem;
+  }
+}

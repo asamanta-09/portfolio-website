@@ -1,0 +1,39 @@
+.home__scroll {
+  position: absolute;
+  right: 45rem;
+  bottom: 12.4rem;
+}
+
+.home__scroll_button {
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home__scroll_button:hover {
+  transform: translateY(0.25rem);
+}
+
+.home__scroll_name {
+  font-size: var(--h3-font-size);
+}
+
+@media screen and (max-width: 992px) {
+  .home__scroll {
+    margin-left: 7.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__scroll {
+    display: none;
+  }
+}

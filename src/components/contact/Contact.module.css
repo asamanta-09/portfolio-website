@@ -1,0 +1,135 @@
+.contact__section {
+  padding: 4rem 1rem;
+  background-color: transparent;
+}
+
+.contact__heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact__subtitle {
+  text-align: center;
+  color: var(--title-color);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input__group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input__group input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.contact__button {
+  background-color: #000000;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+.contact__button:hover {
+  background-color: #36383e;
+}
+
+.contact__info {
+  flex: 1;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #333;
+  line-height: 1.8;
+}
+
+.contact__info p strong {
+  color: #0d2b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .contact__container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__form{
+    width: 90vh;
+  }
+  .contact__form input,textarea {
+    font-size: 1.7rem;
+    width: 82vh;
+    border-radius: 12px;
+  }
+  .contact__form button{
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .input__group {
+    flex-direction: column;
+  }
+
+  .contact__button {
+    width: 50%;
+    text-align: center;
+  }
+  .contact__section{
+    width: 100vh;
+  }
+  .contact__heading{
+    font-size: 3.5rem;
+  }
+  .contact__subtitle{
+    font-size: 2rem;
+  }
+}
